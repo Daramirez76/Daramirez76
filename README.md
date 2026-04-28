@@ -13,9 +13,7 @@ Trabajo principalmente construyendo sistemas que ayudan a organizar información
 - Docker
 - Linux
 - Git
-- OCR
-- Chatbots con IA
-- Automatización de procesos
+
 
 ## A qué me dedico
 
