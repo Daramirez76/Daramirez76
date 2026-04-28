@@ -7,9 +7,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Backend & AI Automation — David Ramirez" },
-      { name: "description", content: "Construyo sistemas backend con IA para automatizar procesos y transformar datos en información útil. OCR, chatbots y dashboards aplicados a problemas reales." },
+      {
+        name: "description",
+        content:
+          "Construyo sistemas backend con IA para automatizar procesos y transformar datos en información útil. OCR, chatbots y dashboards aplicados a problemas reales.",
+      },
       { property: "og:title", content: "Backend & AI Automation — David Ramirez" },
-      { property: "og:description", content: "Sistemas backend con IA: OCR, chatbots y automatización de procesos para negocios y usuarios reales." },
+      {
+        property: "og:description",
+        content:
+          "Sistemas backend con IA: OCR, chatbots y automatización de procesos para negocios y usuarios reales.",
+      },
     ],
   }),
   component: Index,
@@ -28,10 +36,14 @@ function Index() {
             Disponible · Backend · AI Automation
           </span>
           <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Construyo sistemas backend con <span className="text-gradient">inteligencia artificial</span> para automatizar procesos y transformar datos en información útil.
+            Construyo sistemas backend con{" "}
+            <span className="text-gradient">inteligencia artificial</span> para automatizar procesos
+            y transformar datos en información útil.
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Uso IA, OCR, automatización y backend para resolver problemas reales: digitalizar comprobantes, atender consultas con chatbots y exponer la información en dashboards claros.
+            Uso IA, OCR, automatización y backend para resolver problemas reales: digitalizar
+            comprobantes, atender consultas con chatbots y exponer la información en dashboards
+            claros.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -39,7 +51,15 @@ function Index() {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-glow"
             >
               Ver proyectos
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </Link>
@@ -59,7 +79,10 @@ function Index() {
         </div>
 
         {/* Floating visual */}
-        <div className="relative hidden lg:block" style={{ animation: "var(--animate-scale-in)", animationDelay: "200ms" }}>
+        <div
+          className="relative hidden lg:block"
+          style={{ animation: "var(--animate-scale-in)", animationDelay: "200ms" }}
+        >
           <div className="absolute -inset-6 rounded-3xl bg-gradient-primary opacity-20 blur-3xl" />
           <div className="relative rounded-3xl border border-border bg-card p-8 shadow-elevated">
             <div className="flex items-center gap-2 border-b border-border pb-4">
@@ -69,13 +92,16 @@ function Index() {
               <span className="ml-2 text-xs text-muted-foreground">~/ocr_agent.py</span>
             </div>
             <pre className="mt-4 font-mono text-xs leading-relaxed text-muted-foreground">
-              <span className="text-primary">class</span> <span className="text-primary-glow">OCRAgent</span>:
-              {"\n    "}channel = <span className="text-primary-glow">'whatsapp'</span>
-              {"\n    "}engine  = <span className="text-primary-glow">'ocr + ai'</span>
-              {"\n    "}output  = <span className="text-primary-glow">'dashboard'</span>
-              {"\n\n"}<span className="text-primary">def</span> process(receipt):
+              <span className="text-primary">class</span>{" "}
+              <span className="text-primary-glow">OCRAgent</span>:{"\n    "}channel ={" "}
+              <span className="text-primary-glow">'whatsapp'</span>
+              {"\n    "}engine = <span className="text-primary-glow">'ocr + ai'</span>
+              {"\n    "}output = <span className="text-primary-glow">'dashboard'</span>
+              {"\n\n"}
+              <span className="text-primary">def</span> process(receipt):
               {"\n    "}data = extract(receipt)
-              {"\n    "}<span className="text-primary">return</span> store(data)
+              {"\n    "}
+              <span className="text-primary">return</span> store(data)
             </pre>
             <div className="mt-6 grid grid-cols-3 gap-2">
               {["📄", "🤖", "📊"].map((e, i) => (
@@ -93,13 +119,23 @@ function Index() {
       </section>
 
       {/* Featured project */}
-      <section className="pb-16" style={{ animation: "var(--animate-fade-up)", animationDelay: "100ms" }}>
+      <section
+        className="pb-16"
+        style={{ animation: "var(--animate-fade-up)", animationDelay: "100ms" }}
+      >
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <span className="text-xs font-medium uppercase tracking-wider text-primary">Proyecto destacado</span>
-            <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight">{featured.title}</h2>
+            <span className="text-xs font-medium uppercase tracking-wider text-primary">
+              Proyecto destacado
+            </span>
+            <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight">
+              {featured.title}
+            </h2>
           </div>
-          <Link to="/proyectos" className="story-link hidden text-sm font-medium text-primary sm:inline-block">
+          <Link
+            to="/proyectos"
+            className="story-link hidden text-sm font-medium text-primary sm:inline-block"
+          >
             Ver todos
           </Link>
         </div>
@@ -108,23 +144,38 @@ function Index() {
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-primary opacity-10 blur-3xl" />
           <div className="relative grid gap-8 lg:grid-cols-3">
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">Problema</span>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{featured.problem}</p>
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                Problema
+              </span>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {featured.problem}
+              </p>
             </div>
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">Solución</span>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{featured.solution}</p>
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                Solución
+              </span>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {featured.solution}
+              </p>
             </div>
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-primary">Impacto</span>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{featured.impact}</p>
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                Impacto
+              </span>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {featured.impact}
+              </p>
             </div>
           </div>
 
           <div className="relative mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-border/60 pt-6">
             <div className="flex flex-wrap gap-1.5">
               {featured.stack.map((t) => (
-                <span key={t} className="rounded-full border border-border bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                <span
+                  key={t}
+                  className="rounded-full border border-border bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground"
+                >
                   {t}
                 </span>
               ))}
@@ -150,8 +201,12 @@ function Index() {
       <section className="grid gap-8 pb-16 lg:grid-cols-[1fr_280px]">
         <div>
           <div className="mb-8">
-            <span className="text-xs font-medium uppercase tracking-wider text-primary">Capacidades</span>
-            <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight">Cómo aporto valor</h2>
+            <span className="text-xs font-medium uppercase tracking-wider text-primary">
+              Capacidades
+            </span>
+            <h2 className="mt-2 font-display text-3xl font-semibold tracking-tight">
+              Cómo aporto valor
+            </h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {capabilities.map((c, i) => (
@@ -163,10 +218,15 @@ function Index() {
                 <h3 className="font-display text-base font-semibold text-foreground transition-colors group-hover:text-primary">
                   {c.area}
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{c.description}</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  {c.description}
+                </p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {c.items.map((it) => (
-                    <span key={it} className="rounded-full border border-border bg-secondary px-2 py-0.5 text-[11px] font-medium text-secondary-foreground">
+                    <span
+                      key={it}
+                      className="rounded-full border border-border bg-secondary px-2 py-0.5 text-[11px] font-medium text-secondary-foreground"
+                    >
                       {it}
                     </span>
                   ))}
@@ -179,7 +239,12 @@ function Index() {
         <div className="space-y-5">
           <Sidebar title="Resuelvo">
             <ul className="space-y-3 text-sm">
-              {["Procesos manuales y repetitivos", "Digitalización de comprobantes", "Atención saturada por consultas básicas", "Falta de visibilidad operativa"].map((i) => (
+              {[
+                "Procesos manuales y repetitivos",
+                "Digitalización de comprobantes",
+                "Atención saturada por consultas básicas",
+                "Falta de visibilidad operativa",
+              ].map((i) => (
                 <li key={i} className="flex items-start gap-2 text-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                   {i}
@@ -190,9 +255,18 @@ function Index() {
 
           <Sidebar title="Para quién">
             <ul className="space-y-3 text-sm text-foreground">
-              <li className="flex items-start gap-2"><span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-glow" />Negocios con operaciones manuales</li>
-              <li className="flex items-start gap-2"><span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-glow" />Equipos que necesitan automatizar</li>
-              <li className="flex items-start gap-2"><span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-glow" />Usuarios reales con problemas concretos</li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-glow" />
+                Negocios con operaciones manuales
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-glow" />
+                Equipos que necesitan automatizar
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-glow" />
+                Usuarios reales con problemas concretos
+              </li>
             </ul>
           </Sidebar>
         </div>

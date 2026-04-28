@@ -6,4 +6,28 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const githubPagesBase = "/Daramirez76/";
+
+export default defineConfig({
+  ...(isGitHubPages ? { cloudflare: false } : {}),
+  vite: {
+    base: isGitHubPages ? githubPagesBase : "/",
+  },
+  ...(isGitHubPages
+    ? {
+        tanstackStart: {
+          prerender: {
+            enabled: true,
+            crawlLinks: false,
+          },
+          pages: [
+            { path: "/" },
+            { path: "/proyectos" },
+            { path: "/sobre-mi" },
+            { path: "/contacto" },
+          ],
+        },
+      }
+    : {}),
+});
