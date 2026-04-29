@@ -9,9 +9,17 @@ export const Route = createFileRoute("/proyectos")({
   head: () => ({
     meta: [
       { title: "Proyectos — Backend & AI Automation" },
-      { name: "description", content: "Proyectos reales de backend con IA: agente OCR para comerciantes informales y sistema de gestión geriátrica con chatbot. Cada uno con problema, solución, impacto y repositorio." },
+      {
+        name: "description",
+        content:
+          "Proyectos reales de backend con IA: agente OCR para comerciantes informales y sistema de gestión geriátrica con chatbot. Cada uno con problema, solución, impacto y repositorio.",
+      },
       { property: "og:title", content: "Proyectos — Backend & AI Automation" },
-      { property: "og:description", content: "Casos reales con repositorio público: OCR + WhatsApp y sistema de gestión con chatbot IA." },
+      {
+        property: "og:description",
+        content:
+          "Casos reales con repositorio público: OCR + WhatsApp y sistema de gestión con chatbot IA.",
+      },
     ],
   }),
   component: Proyectos,
@@ -39,7 +47,9 @@ function Proyectos() {
               {capabilities.map((c) => (
                 <li key={c.area} className="border-b border-border/60 pb-3 last:border-0">
                   <p className="text-sm font-medium text-foreground">{c.area}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{c.description}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                    {c.description}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -47,8 +57,18 @@ function Proyectos() {
 
           <Sidebar title="Tipos de problema">
             <div className="flex flex-wrap gap-1.5">
-              {["OCR", "Chatbots", "Automatización", "Dashboards", "Integración WhatsApp", "Gestión interna"].map((c) => (
-                <span key={c} className="cursor-default rounded-full border border-border bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:border-primary/40 hover:bg-accent">
+              {[
+                "OCR",
+                "Chatbots",
+                "Automatización",
+                "Dashboards",
+                "Integración WhatsApp",
+                "Gestión interna",
+              ].map((c) => (
+                <span
+                  key={c}
+                  className="cursor-default rounded-full border border-border bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:border-primary/40 hover:bg-accent"
+                >
                   {c}
                 </span>
               ))}

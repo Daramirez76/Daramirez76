@@ -1,16 +1,28 @@
-## Hi there 👋
+# Hola, soy David
 
-<!--
-**Daramirez76/Daramirez76** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Soy desarrollador de software de Bogotá, Colombia. Me gusta crear soluciones web que combinen backend, automatización e inteligencia artificial para resolver problemas reales de forma práctica.
 
-Here are some ideas to get you started:
+Trabajo principalmente construyendo sistemas que ayudan a organizar información, automatizar tareas repetitivas y convertir datos en herramientas útiles para usuarios y negocios.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Herramientas que uso
+
+- Python
+- JavaScript
+- React
+- MySQL
+- Docker
+- Linux
+- Git
+
+
+## A qué me dedico
+
+Me enfoco en el desarrollo backend y la integración de tecnologías de IA aplicada. Me interesa crear aplicaciones simples, funcionales y escalables: desde dashboards conectados a datos, hasta agentes conversacionales o herramientas que digitalizan información y reducen trabajo manual.
+
+Actualmente sigo aprendiendo y construyendo proyectos alrededor de backend, sistemas web, automatización e inteligencia artificial aplicada.
+
+## Contacto
+
+- LinkedIn: [linkedin.com/in/david-ramirez](https://www.linkedin.com/in/david-ramirez-6bb33b3b8/)
+- Portafolio: [daramirez76.github.io/Daramirez76](https://daramirez76.github.io/Daramirez76/)
+- Email: da.ramirez25@hotmail.com

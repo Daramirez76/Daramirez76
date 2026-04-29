@@ -8,9 +8,16 @@ export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
       { title: "Contacto — David Ramirez · Backend & AI" },
-      { name: "description", content: "Abierto a oportunidades en backend, inteligencia artificial y automatización de procesos. Conecta vía email, GitHub o LinkedIn." },
+      {
+        name: "description",
+        content:
+          "Abierto a oportunidades en backend, inteligencia artificial y automatización de procesos. Conecta vía email, GitHub o LinkedIn.",
+      },
       { property: "og:title", content: "Contacto — David Ramirez · Backend & AI" },
-      { property: "og:description", content: "Disponible para roles y colaboraciones en backend, IA aplicada y automatización." },
+      {
+        property: "og:description",
+        content: "Disponible para roles y colaboraciones en backend, IA aplicada y automatización.",
+      },
     ],
   }),
   component: Contacto,
@@ -82,7 +89,12 @@ function Contacto() {
               </div>
               <svg
                 className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M7 17 17 7M7 7h10v10" />
               </svg>
@@ -123,9 +135,22 @@ function Contacto() {
 
           <Sidebar title="Tipo de oportunidades">
             <ul className="space-y-2 text-sm">
-              {["Backend con Python", "Integración de IA y chatbots", "Automatización de procesos", "OCR y digitalización de datos"].map((t) => (
+              {[
+                "Backend con Python",
+                "Integración de IA y chatbots",
+                "Automatización de procesos",
+                "OCR y digitalización de datos",
+              ].map((t) => (
                 <li key={t} className="flex items-start gap-2 text-foreground">
-                  <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     <path d="m5 12 5 5L20 7" />
                   </svg>
                   {t}
