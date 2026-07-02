@@ -26,6 +26,8 @@ export const projects = [
       "Sistema web con chatbot inteligente que resuelve consultas frecuentes y un panel para gestionar residentes, turnos e información clínica.",
     impact: "Optimización de la atención y mayor eficiencia en los procesos internos del centro.",
     repo: "https://github.com/Daramirez76/hga/tree/dev",
+    liveUrl: "https://daramirez76.github.io/hga",
+    liveLabel: "Ver sitio",
   },
 ];
 
